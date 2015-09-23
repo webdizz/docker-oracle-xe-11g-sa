@@ -1,0 +1,11 @@
+db:
+  # image: sath89/oracle-xe-11g:latest
+  image: oracle
+  ports:
+    - "15080:8080"
+    - "1521:1521"
+  environment:
+    - processes=200
+    - DATABASES=sample
+  volumes:
+    - .oracle_data:/u01/app/oracle
