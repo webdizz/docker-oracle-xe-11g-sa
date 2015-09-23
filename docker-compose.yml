@@ -1,6 +1,5 @@
 db:
-  # image: sath89/oracle-xe-11g:latest
-  image: oracle
+  image: webdizz/oracle-xe-11g-sa:latest
   ports:
     - "15080:8080"
     - "1521:1521"
